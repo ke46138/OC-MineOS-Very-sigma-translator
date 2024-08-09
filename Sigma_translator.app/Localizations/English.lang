@@ -1,0 +1,9 @@
+{ 
+  translate = "Translate",
+  toRus = "Translate to Russian",
+  toEng = "Translate to English",
+  toGer = "Translate to German",
+  toFre = "Translate to French",
+  textToTranslate = "Text to translate",
+  translatedText = "Translated text"
+}
