@@ -4,6 +4,8 @@
   toEng = "Translate to English",
   toGer = "Translate to German",
   toFre = "Translate to French",
+  toIta = "Translate to Italian",
+  toPol = "Translate to Polish",
   textToTranslate = "Text to translate",
   translatedText = "Translated text"
 }
