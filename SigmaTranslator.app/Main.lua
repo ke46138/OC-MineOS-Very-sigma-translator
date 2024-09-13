@@ -31,12 +31,18 @@ end
 comboBox:addItem(localization.toFre).onTouch = function()
   lang = "fre"
 end
+comboBox:addItem(localization.toIta).onTouch = function()
+  lang = "ita"
+end
+comboBox:addItem(localization.toPol).onTouch = function()
+  lang = "pol"
+end
 
 local translateButton = window:addChild(GUI.button(2, 8, 30, 3, 0xFFFFFF, 0x555555, 0x880000, 0xFFFFFF, localization.translate))
 translateButton.onTouch = function()
   query = amogus.text
   temp = query:gsub("%s", "&")
-  sigma, reason = internet.request("http://ke46138.keenetic.pro:8001/translate/api/" .. lang .. "/" .. temp)
+  sigma, reason = internet.request("http://213.171.30.54:8080/api/translate/" .. lang .. "/" .. temp)
   sugoma.text = sigma
 end
 
