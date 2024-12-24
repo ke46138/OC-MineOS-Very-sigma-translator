@@ -42,7 +42,7 @@ local translateButton = window:addChild(GUI.button(2, 8, 30, 3, 0xFFFFFF, 0x5555
 translateButton.onTouch = function()
   query = amogus.text
   temp = query:gsub("%s", "&")
-  sigma, reason = internet.request("http://213.171.30.54:8080/api/translate/" .. lang .. "/" .. temp)
+  sigma, reason = internet.request("https://ke46138.pythonanywhere.com/translate/" .. lang .. "/" .. temp)
   sugoma.text = sigma
 end
 
